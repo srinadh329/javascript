@@ -14,6 +14,13 @@ String(), toString(), new String()
  String     : it will converting any value to the string even null and undefined.
  toString   : it will converting value except null and undefined properties.
 ```
+```
+string.formcharcode(): it will return the string
+String.formcharcode(49): 1
+
+```
+
+
 ## Concating a string
 ### join two variable into single variable
 
