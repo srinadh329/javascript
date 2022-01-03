@@ -19,7 +19,16 @@ string.formcharcode(): it will return the string
 String.formcharcode(49): 1
 
 ```
+```
+charcode(): it will return the unique code when trigger the keypress of event.
 
+```
+
+```
+test(): The test() method returns true if it finds a match, otherwise false.
+
+
+```
 
 ## Concating a string
 ### join two variable into single variable
