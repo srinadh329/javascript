@@ -73,5 +73,90 @@ let e = `${a} ${b}`;
 
 
 ```
+## character
+### It will return the character at specified index of the string
+```
+ let sname ="srinadh";
+    console.log(sname.charAt(4)) // a
+
+```
+## trim
+### It remove the white space form the both edges of a string
+```
+    let newname= "  srinadh    "      
+    console.log(newname.trim())
+
+```
+##trimStart()
+### It remove the white space at the starting of a string
+```
+    let newname= "  srinadh    "      
+    console.log(newname.trimStart())
+
+```
+##trimEnd()
+### It remove the white space at the Ending of a string
+```
+    let newname= "  srinadh    "      
+    console.log(newname.trimEnd())
+
+```
+##slice
+### It will return the extracted part of new string and it has starting position and ending postion if give starting position from the string without ending position it will return complete extract string.if give starting position and ending position it will return the starting position to ending postion before element.it will accept negative values also if give negative value the starting index position from right to left.
+```
+ let sname ="srinadh";
+  console.log(sname.slice(2)) //  inadh
+  console.log(sname.slice(2,3)) // i
+   console.log(sname.slice(2,5)) // ina  
+    console.log(sname.slice(-5,-1)) // inad
+```
+##substring
+
+### It similar to the slice and it not accept negative values
+```
+     console.log(sname.substring(3,5)) // na
+```
+##indexof
+### It will return the postion of the string and it return negative value if text is not found
+```
+  let format = "sivasrinadh"       
+   console.log(format.indexOf('a'))    // 3
+
+```
+##lastindexof
+### It will return the postion of the string and it return negative value if text is not found
+```
+  let format = "sivasrinadh"       
+   console.log(format.lastIndexOf('a'))    // 8
+
+```
+```
+ console.log(format.lastIndexOf('.')) // it will return poistion
+     console.log(format.slice(format.lastIndexOf('.'))) // it will the string
+     console.log(format.replace(format.slice(format.lastIndexOf('.')),'.png')) // it will replace the string
+```
+##lower case
+### It will return the lowercase string
+```
+ let low = 'SRINADH';
+       console.log(low)     
+       console.log(low.toLowerCase()) // srinadh
+```
+
+###upper case
+### It will return the uppercase string
+
+```
+let upp ="srinadh";
+    console.log(upp.toUpperCase()) //   SRINADH
+```
+## repeat 
+### It will return repeat string number of time at particular count
+
+```
+console.log("siva".repeat(4)) // sivasivasivasiva
+
+```
+
 ## Array
 Array is a collection of elements that can stored in contiguous memory location
