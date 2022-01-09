@@ -42,7 +42,7 @@
      let jjjj = 'Venki \'dhdhhdh"""""'
      console.log(jjjj)
      console.log(srr.charAt(2));
-
+    
      let name ="    srinadh    ";
      let n = 55;
      console.log(name.trim().length);

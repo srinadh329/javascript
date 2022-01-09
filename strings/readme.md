@@ -46,5 +46,32 @@ let e = `${a} ${b}`;
 ```
 ## Reverse of string
 
+### it will return the reverse string in any value
+
+```
+    let myname='sivasrinadh'
+       let n =1337
+       let arry = [1,2,3]
+       let arry1= String(arry)     
+       console.log(typeof m)
+       console.log(myname.split('').reverse().join(''));
+       console.log([...String(n)].reverse().join('')); 
+       console.log(arry1.split('').reverse().join('')) 
+
+```
+## Comparing Strings
+### It compare strings alphabetically,it will return negative postive and zero values. if returns negative value the compare string in not alphabetically and it return postive value the compate string in alphabetically and it return zero value the reference string is same
+
+```
+    // Comparing Strings
+       let fn = 'bdf';
+       let sn = 'adf';
+       console.log(fn==sn)  return false
+       console.log(fn.localeCompare(sn))   return 1
+    
+    // Comparing Strings
 
 
+```
+## Array
+Array is a collection of elements that can stored in contiguous memory location
