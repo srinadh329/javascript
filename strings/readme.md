@@ -216,7 +216,7 @@ console.log(name) // { name: 'venki', pas: '' }
 
 ```
 
-###Map
+##Map
 ### Based on condition it will return the new array elements and it will change the orginal array
 ```
 let arrmap = list.map(x=>{
