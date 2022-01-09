@@ -226,6 +226,86 @@ let arrmap = list.map(x=>{
 console.log(arrmap) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
 console.log(list) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
 
+```
+###Every
+### It will return the boolean value.when codiction is statify each very element it will return true otherwise false
+```
+let eveA =[2,4,8,10];
+let e = eveA.every(x=>{
+    return x%2 ==0
+});
+console.log(e)
+
+```
+
+###some
+### It will return the boolean value. when condiction is statify at least one element in the array it will return true otherwise false
+```
+let elesome = [1,3,5,7,9];
+
+let s = elesome.some(x=>{
+    return x%2==0
+});
+console.log(s)
+
+
+```
+
+```
+let [ds,g,ss] =[1,5,'ff'];
+console.log(ds,g,ss); // 1,5,ff
+
+```
+```
+let n =[1,2]
+let nn = [3,3]
+console.log(JSON.stringify(n) == JSON.stringify(nn)) // false
+console.log(JSON.stringify(n)) // [1,2]
+```
+
+###reverse
+
+### It will return reverse of array elements
+
+```
+let arry = [1,2,3]
+let rev= arry.reverse();
+console.log(rev) // [3,2,1]
+
+
+```
+###push method
+### It added to array from left to right
+```
+let dymicArr=[];
+console.log(dymicArr); // []
+
+ dymicArr.push(2);
+ console.log(dymicArr) // [2]
+ dymicArr.push(3);
+ console.log(dymicArr) // [2,3]  
+
+```
+###pop method
+### It remove to array element from left to right
+
+```
+dymicArr.pop()
+console.log(dymicArr) // [2]
+
+```
+###unshift method
+### It added to array from right to left
+```
+dymicArr.unshift(34,33)
+console.log(dymicArr) // [34,33,2]
+
+```
+###shift method
+### It remove to array from right to left
+```
+dymicArr.shift()
+console.log(dymicArr) // [33,2]
 
 ```
 
