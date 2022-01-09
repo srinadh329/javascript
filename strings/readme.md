@@ -159,7 +159,7 @@ console.log("siva".repeat(4)) // sivasivasivasiva
 ```
 
 # Array
-Array is a collection of elements that can stored in contiguous memory location.
+### Array is a collection of elements that can stored in contiguous memory location.
 
 ```
 let arr = [2,5,9,1,8];
@@ -168,5 +168,32 @@ console.log(arr) // It will return  the  total array of elements
 console.log(arr[3]) // It will return the element of the index of position // 1
 console.log(arr.lenght) // It will return the lenght of the arrya // 5
 console.log(arr.[arr.lenght-1]) // It will return the array of last element // 8
-
+console.log(arr[(arr.length-1)/2]); // It will return the middle of array of element
 ````
+### contact Array
+
+```
+let c= ['venki','srinadh'];
+let d = ['javascript','angular'];
+
+let z = c+d
+console.log(z) // It will return array but not contact array of element
+console.log(Array.isArray(z)) // false
+
+```
+
+```
+let ee = ['siva', 'srinadh',]   
+let dd = ['kavya', 'priya'] 
+let zz = ee.concat(dd)
+console.log(zz) // It will return the array  
+console.log(Array.isArray(zz)) // true
+
+```
+
+```
+let cc = [...ee , ...dd]
+console.log(cc) // It will return the array
+console.log(Array.isArray(cc)) // true
+
+```
