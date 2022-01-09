@@ -158,5 +158,15 @@ console.log("siva".repeat(4)) // sivasivasivasiva
 
 ```
 
-## Array
-Array is a collection of elements that can stored in contiguous memory location
+# Array
+Array is a collection of elements that can stored in contiguous memory location.
+
+```
+let arr = [2,5,9,1,8];
+
+console.log(arr) // It will return  the  total array of elements
+console.log(arr[3]) // It will return the element of the index of position // 1
+console.log(arr.lenght) // It will return the lenght of the arrya // 5
+console.log(arr.[arr.lenght-1]) // It will return the array of last element // 8
+
+````
