@@ -197,3 +197,35 @@ console.log(cc) // It will return the array
 console.log(Array.isArray(cc)) // true
 
 ```
+
+##Filters
+### Based on condition it will return the new array elements and it will not change the orginal array
+```
+let ele =[34,5,53,55,453,54,4];
+
+let element = ele.filter(x=>{
+    return x%2 == 1;
+})
+console.log(element) //  5, 53, 55, 453
+
+let list=[{name:'venki',pas:''},{name:"srinadh",pas:'123'},{name:"srinadh",pas:'123ss'}];
+let name = list.filter(x=>{
+    return x.name == "venki"
+})
+console.log(name) // { name: 'venki', pas: '' } 
+
+```
+
+###Map
+### Based on condition it will return the new array elements and it will change the orginal array
+```
+let arrmap = list.map(x=>{
+    x.phone='123';
+    return x;
+})
+console.log(arrmap) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
+console.log(list) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
+
+
+```
+
