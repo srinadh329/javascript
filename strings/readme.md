@@ -227,6 +227,24 @@ console.log(arrmap) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh
 console.log(list) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
 
 ```
+
+### find
+###   It will  returns the first occurrence of an element in the array that satisfies the given condiction and will not check entier array
+
+var obj = [
+
+    { name: 'Max', age: 23 },
+    { name: 'John', age: 20 },
+    { name: 'Caley', age: 18 }
+];
+ 
+var found = obj.find(x=>{
+ return (x.name == 'John')
+});
+console.log(found); //   { name: 'John', age: 20 },
+
+
+
 ###Every
 ### It will return the boolean value.when codiction is statify each very element it will return true otherwise false
 ```
