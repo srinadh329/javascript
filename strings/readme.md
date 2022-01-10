@@ -124,7 +124,7 @@ let e = `${a} ${b}`;
 
 ```
 ##lastindexof
-### It will return the postion of the string and it return negative value if text is not found
+### It will return the last postion of the string and it return negative value if text is not found
 ```
   let format = "sivasrinadh"       
    console.log(format.lastIndexOf('a'))    // 8
