@@ -31,5 +31,23 @@ console.log(Object.values(ob1))
 
 
 
+// object entries;
+console.log(Object.entries(obj))
+
+
+// destructing the object;
+let user={
+    id:20,
+    name:'srinadh',
+    age:28
+};
+
+//let id  = user.id
+let {id,name,age=200} = user;
+console.log(id,'id')
+console.log(name,'name')
+console.log(age,'age')
+
+
 
 
