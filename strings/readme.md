@@ -124,7 +124,7 @@ let e = `${a} ${b}`;
 
 ```
 ##lastindexof
-### It will return the postion of the string and it return negative value if text is not found
+### It will return the last postion of the string and it return negative value if text is not found
 ```
   let format = "sivasrinadh"       
    console.log(format.lastIndexOf('a'))    // 8
@@ -157,8 +157,11 @@ let upp ="srinadh";
 console.log("siva".repeat(4)) // sivasivasivasiva
 
 ```
+# STRINGS END
 
-# Array
+
+
+# ARRAY START
 ### Array is a collection of elements that can stored in contiguous memory location.
 
 ```
@@ -227,6 +230,31 @@ console.log(arrmap) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh
 console.log(list) // { name: 'venki', pas: '', phone: '123' },{ name: 'srinadh', pas: '123', phone: '123' },{ name: 'srinadh', pas: '123ss', phone: '123' }
 
 ```
+
+### find
+###   It will  returns the first occurrence of an element in the array that satisfies the given condiction and will not check entier array
+
+var obj = [
+
+    { name: 'Max', age: 23 },
+    { name: 'John', age: 20 },
+    { name: 'Caley', age: 18 }
+];
+ 
+var found = obj.find(x=>{
+ return (x.name == 'John')
+});
+console.log(found); //   { name: 'John', age: 20 },
+
+### findIndex
+### It will returns the index of the position of array
+
+var result = obj.findIndex(x=>{
+ return (x.age == 20)
+});
+console.log(result); // 1
+
+
 ###Every
 ### It will return the boolean value.when codiction is statify each very element it will return true otherwise false
 ```
@@ -308,4 +336,51 @@ dymicArr.shift()
 console.log(dymicArr) // [33,2]
 
 ```
+
+# ARRAY END
+
+# OBJECT START
+###OBJECT: It is a collection of properties each properties has key and value
+
+let obj = {
+ name:'srinadh',
+ age: 25,
+ test: function (a){
+  return a
+  }
+}
+console.log(obj.name) // srinadh
+console.log(obj.test(11)) // 11
+
+## Add key to object
+
+obj['status'] = 'married';
+
+console.log(obj) // { name: 'venkatesh', age: 20, test: [Function: test], status: 'marrried' }
+
+
+## Merge Objects
+
+let ob1={a:1,b:3},ob2={c:4,d:5};
+
+console.log({...ob1,...ob2}) // { a: 1, b: 3, c: 4, d: 5 }
+console.log(Object.assign(ob1,ob2,{f:6})) // { a: 1, b: 3, c: 4, d: 5, f: 6 }
+
+## Delete Object propertie
+
+ delete obj.status
+ console.log(obj) // { name: 'venkatesh', age: 20, test: [Function: test]}
+ 
+## Get object keys
+
+console.log(Object.keys(obj)) // [ 'name', 'age', 'test', 'number' ]
+
+## Get object values
+
+console.log(Object.vales(obj)) // [ 'venkatesh', 20, [Function: test], 22 ]
+
+
+
+# OBJECT END
+
 
