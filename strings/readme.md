@@ -338,3 +338,49 @@ console.log(dymicArr) // [33,2]
 ```
 
 # ARRAY END
+
+# OBJECT START
+###OBJECT: It is a collection of properties each properties has key and value
+
+let obj = {
+ name:'srinadh',
+ age: 25,
+ test: function (a){
+  return a
+  }
+}
+console.log(obj.name) // srinadh
+console.log(obj.test(11)) // 11
+
+## Add key to object
+
+obj['status'] = 'married';
+
+console.log(obj) // { name: 'venkatesh', age: 20, test: [Function: test], status: 'marrried' }
+
+
+## Merge Objects
+
+let ob1={a:1,b:3},ob2={c:4,d:5};
+
+console.log({...ob1,...ob2}) // { a: 1, b: 3, c: 4, d: 5 }
+console.log(Object.assign(ob1,ob2,{f:6})) // { a: 1, b: 3, c: 4, d: 5, f: 6 }
+
+## Delete Object propertie
+
+ delete obj.status
+ console.log(obj) // { name: 'venkatesh', age: 20, test: [Function: test]}
+ 
+## Get object keys
+
+console.log(Object.keys(obj)) // [ 'name', 'age', 'test', 'number' ]
+
+## Get object values
+
+console.log(Object.vales(obj)) // [ 'venkatesh', 20, [Function: test], 22 ]
+
+
+
+# OBJECT END
+
+
