@@ -157,8 +157,11 @@ let upp ="srinadh";
 console.log("siva".repeat(4)) // sivasivasivasiva
 
 ```
+# STRINGS END
 
-# Array
+
+
+# ARRAY START
 ### Array is a collection of elements that can stored in contiguous memory location.
 
 ```
@@ -243,6 +246,13 @@ var found = obj.find(x=>{
 });
 console.log(found); //   { name: 'John', age: 20 },
 
+### findIndex
+### It will returns the index of the position of array
+
+var result = obj.findIndex(x=>{
+ return (x.age == 20)
+});
+console.log(result); // 1
 
 
 ###Every
@@ -327,3 +337,4 @@ console.log(dymicArr) // [33,2]
 
 ```
 
+# ARRAY END
