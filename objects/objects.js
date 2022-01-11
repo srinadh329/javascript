@@ -11,7 +11,7 @@ console.log(obj.test(11))
 // add new key to obj
 obj['marks'] =20;
 
-console.log(obj)
+console.log(obj) 
 
 
 // merge two objects
