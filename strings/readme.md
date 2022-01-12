@@ -387,6 +387,18 @@ let objs = { name: 'venkatesh', age: 20, role: 'se' }
 
 console.log(Object.entries(obj)) // [ [ 'name', 'venkatesh' ], [ 'age', 20 ] ]
 
+## Destructing the object
+
+let user={
+    id:20,
+    name:'srinadh',
+    age:28
+};
+
+let {id,name,age=200} = user;
+console.log(id,'id') // 20
+console.log(name,'name') // srinadh
+console.log(age,'age') // 200
 
 # OBJECT END
 
