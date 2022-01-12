@@ -379,6 +379,13 @@ console.log(Object.keys(obj)) // [ 'name', 'age', 'test', 'number' ]
 
 console.log(Object.vales(obj)) // [ 'venkatesh', 20, [Function: test], 22 ]
 
+## object entries
+
+## It will return the array of array
+
+let objs = { name: 'venkatesh', age: 20, role: 'se' }
+
+console.log(Object.entries(obj)) // [ [ 'name', 'venkatesh' ], [ 'age', 20 ] ]
 
 
 # OBJECT END
