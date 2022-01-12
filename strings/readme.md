@@ -8,10 +8,18 @@
  ```
 ## Create String or convert string from diffterent datatypes
 
+
+## String(), toString(), new String()
+
 ```
-String(), toString(), new String()
  new String : it will return construction String , value can be accessedby string.valueOf();
+ 
  String     : it will converting any value to the string even null and undefined.
+ let a =[1,2,4,null]
+    for(let a1 of a) {
+        console.log(String(a1))
+    }
+    
  toString   : it will converting value except null and undefined properties.
 ```
 ```
