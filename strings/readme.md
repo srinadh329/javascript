@@ -8,10 +8,18 @@
  ```
 ## Create String or convert string from diffterent datatypes
 
+
+## String(), toString(), new String()
+
 ```
-String(), toString(), new String()
  new String : it will return construction String , value can be accessedby string.valueOf();
+ 
  String     : it will converting any value to the string even null and undefined.
+ let a =[1,2,4,null]
+    for(let a1 of a) {
+        console.log(String(a1))
+    }
+    
  toString   : it will converting value except null and undefined properties.
 ```
 ```
@@ -336,6 +344,73 @@ dymicArr.shift()
 console.log(dymicArr) // [33,2]
 
 ```
+## sort 
+
+### Asc order: It will return lower value to higher value
+let unsortedAry = [2,3,5,1,4]; 
+
+console.log(unsortedAry.sort((a,b)=>a-b)); // [ 1, 2, 3, 4, 5 ]
+
+### Asc order: It will return higher value to lower value
+console.log(unsortedAry.sort((a,b)=>b-a)); // [ 5, 4, 3, 2, 1 ]
+
+
+### array of obj 
+
+let unsortedAryOBj= [{id:3,name:'venki'},{id:1,name:'srinadh'},{id:2,name:'siva'}];
+let unsortedAryOBj_result = unsortedAryOBj.sort((a,b)=>{
+    return  a.id - b.id
+})
+console.log(unsortedAryOBj_result) // [{ id: 1, name: 'srinadh' },{ id: 2, name: 'siva' },{ id: 3, name: 'venki' }]
+
+### Both string and number sort : It will return the sort form number to string
+
+let dsd = ['s', 't', 'a', 'c', 'K', 'o', 'v', 'E', 'r', 'f', 'l', 'W', '2', '1']
+console.log(dsd.sort((a,b)=>a.localeCompare(b))) // ['1', '2', 'a', 'c','E', 'f', 'K', 'l','o', 'r', 's', 't','v', 'W']
+
+## Date Sort : It will return the low value to higher value
+
+var dates = [
+    new Date(2007, 11, 10),
+    new Date(2014, 2, 21),
+    new Date(2009, 6, 11),
+    new Date(2016, 7, 23)
+    ];
+
+console.log(dates.sort((a,b)=>{
+ if(a>b){return -1}
+ if(a<b){return 1}
+ return 0
+}))
+
+[
+  2007-12-09T18:30:00.000Z,
+  2009-07-10T18:30:00.000Z,
+  2014-03-20T18:30:00.000Z,
+  2016-08-22T18:30:00.000Z
+]
+
+## reduce : It will return each array element count
+
+ let newA = [0,1,2,3,4,5];
+    let newA_total = newA.reduce((a,b)=>{
+        console.log(a,b)
+        return a+b;
+    }) // 0 1
+1 2
+3 3
+6 4
+10 5
+
+## Max and Min
+
+## Max: It will return the maximum value
+
+let max = [3,4,65,34,23];
+console.log(Math.max(...max)) // 65
+console.log(Math.min(...max)) // 3
+
+
 
 # ARRAY END
 
@@ -379,7 +454,26 @@ console.log(Object.keys(obj)) // [ 'name', 'age', 'test', 'number' ]
 
 console.log(Object.vales(obj)) // [ 'venkatesh', 20, [Function: test], 22 ]
 
+## object entries
 
+## It will return the array of array
+
+let objs = { name: 'venkatesh', age: 20, role: 'se' }
+
+console.log(Object.entries(obj)) // [ [ 'name', 'venkatesh' ], [ 'age', 20 ] ]
+
+## Destructing the object
+
+let user={
+    id:20,
+    name:'srinadh',
+    age:28
+};
+
+let {id,name,age=200} = user;
+console.log(id,'id') // 20
+console.log(name,'name') // srinadh
+console.log(age,'age') // 200
 
 # OBJECT END
 
