@@ -51,7 +51,7 @@
      console.log(srr.substring(6,7));
      console.log(srr.slice(0,4));
 
-     let kf = 'Venkateshchavvakula';
+     let kf = 'Venkateshchavvakula';.
      console.log(kf.lastIndexOf('v'));
 
      let filename = "Srinadhfghhgh.png";
